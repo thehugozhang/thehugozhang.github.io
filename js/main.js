@@ -92,6 +92,15 @@ document.getElementById("button-3").addEventListener("click", () => {
     location.href = "#";
 });
 
+document.getElementById("button-4").addEventListener("click", () => {
+    location.href = "mailto:hugozhang2023@u.northwestern.edu";
+});
+
+document.getElementById("button-5").addEventListener("click", () => {
+    location.href = "resume.pdf";
+});
+
+
 //
 // Ensuring accessibility through tabbable custom elements. 
 //
@@ -135,6 +144,12 @@ document.addEventListener("keypress", function(event) {
                 break;
             case document.getElementById("button-3"):
                 document.getElementById("button-3").click();
+                break;
+            case document.getElementById("button-4"):
+                document.getElementById("button-4").click();
+                break;
+            case document.getElementById("button-5"):
+                document.getElementById("button-5").click();
                 break;
         }
     }
