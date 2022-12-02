@@ -346,19 +346,12 @@ html, body {
     color: rgb(30, 61, 89);
 }
 
-#projects hr {
-    max-width: 84px;
-    margin: 2em auto 4em 0;
-    color: #C0C0C0;
-    text-align: left;
-}
-
 #projects .projects-intro {
     font-family: sans-serif;
     font-size: 17px;
     color: rgb(30, 61, 89);
     opacity: 0.7;
-    margin: 2em 0 4em 0;
+    margin: 0 0 5em 0;
 }
 
 #projects .projects-intro a.github-link {
@@ -448,12 +441,12 @@ html, body {
 
 #projects .project-container .project-description .li-right {
     float: right;
-    margin-left: 2em;
+    margin-left: 1.6em;
 }
 
 #projects .project-container .project-description .li-left {
     float: left;
-    margin-right: 2em;
+    margin-right: 1.6em;
 }
 
 #projects .project-container .project-description .project-button {
