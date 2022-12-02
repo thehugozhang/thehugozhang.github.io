@@ -331,7 +331,7 @@ html, body {
     justify-content: center;
     width:100%;
     box-sizing:border-box;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 
 #projects div.main-container {
@@ -458,4 +458,32 @@ html, body {
     border: 1px solid #7F00FF;
     border-radius: 5px;
     margin-top: 2em;
+    transition: 0.2s ease-in-out;
+}
+
+#projects .project-container .project-description .project-button:hover {
+    cursor: pointer;
+    background-color: rgba(127, 0, 255, 0.1);
+}
+
+/* Contact Page */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    box-sizing:border-box;
+    margin-bottom: 10em;
+}
+
+#contact div.main-container {
+    width: 80%;
+    max-width: 992px;
+}
+
+#contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(30, 61, 89);
 }

@@ -75,3 +75,67 @@ document.getElementById("role-jibo").addEventListener("click", () => {
     document.getElementById("dynamic-experience-line-3").innerHTML = ``;
     removeDisplay("role-jibo");
 });
+
+//
+// Projects' button behavior.
+//
+
+document.getElementById("button-1").addEventListener("click", () => {
+    location.href = "https://ccdc-main.web.app/";
+});
+
+document.getElementById("button-2").addEventListener("click", () => {
+    location.href = "https://tracejs.co/";
+});
+
+document.getElementById("button-3").addEventListener("click", () => {
+    location.href = "#";
+});
+
+//
+// Ensuring accessibility through tabbable custom elements. 
+//
+
+document.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        switch(document.activeElement) {
+            case document.getElementById("nav-link-about"):
+                document.getElementById("nav-link-about").click();
+                break;
+            case document.getElementById("nav-link-experience"):
+                document.getElementById("nav-link-experience").click();
+                break;
+            case document.getElementById("nav-link-projects"):
+                document.getElementById("nav-link-projects").click();
+                break;
+            case document.getElementById("nav-link-contact"):
+                document.getElementById("nav-link-contact").click();
+                break;
+            case document.getElementById("role-google"):
+                document.getElementById("role-google").click();
+                break;
+            case document.getElementById("role-ccdc"):
+                document.getElementById("role-ccdc").click();
+                break;
+            case document.getElementById("role-pqi"):
+                document.getElementById("role-pqi").click();
+                break;
+            case document.getElementById("role-medumo"):
+                document.getElementById("role-medumo").click();
+                break;
+            case document.getElementById("role-jibo"):
+                document.getElementById("role-jibo").click();
+                break;
+            case document.getElementById("button-1"):
+                document.getElementById("button-1").click();
+                break;
+            case document.getElementById("button-2"):
+                document.getElementById("button-2").click();
+                break;
+            case document.getElementById("button-3"):
+                document.getElementById("button-3").click();
+                break;
+        }
+    }
+});
