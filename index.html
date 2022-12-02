@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Zhang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae625891d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id = "landing">
+        <div>
+            <p class = "intro">Hello, my name is</p>
+            <h1>Hugo Zhang.<br>
+                <span style = "opacity: 0.7;">BS in CS @ </span><span class = "intro-uni"><a href = "https://www.northwestern.edu/">Northwestern</a></span><span style = "opacity: 0.7;">.</span>
+            </h1>
+            <p class = "description">Software engineer with a demonstrated history of writing scalable code. Tech entrepreneur with a passion for creating innovative solutions. Significant experience in SaaS and Web Development.</p>
+            <ul>
+                <li><a id = "nav-link-about">About</a></li>
+                <li><a id = "nav-link-experience">Experience</a></li>
+                <li><a id = "nav-link-projects">Projects</a></li>
+                <li><a id = "nav-link-contact">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id = "about" href = "#about">
+        <div>
+            <h2>About</h2>
+            <div class = "bio-container">
+                <img alt = "LinkedIn Profile Photo" src = "img/me.png" />
+                <div class = "bio-text">
+                    <h3>Hey!</h3>
+                    <p>I'm Hugo, a senior at Northwestern University studying Computer Science and Entrepreneurship. I mostly focus on <strong><span style = "color: #7F00FF;">full-stack development</span></strong>, but have recently been exploring creative applications for <strong><span style = "color: #7F00FF;">artificial intelligence</span></strong>.</p>
+                    <p>I've had the opportunity to work in <strong><span style = "color: #7F00FF;">startups</span></strong>, contract for <strong><span style = "color: #7F00FF;">non-profits</span></strong>, engineer public-facing APIs at a <strong><span style = "color: #7F00FF;">huge corporation</span></strong>, and create numerous full-stack applications as a <strong><span style = "color: #7F00FF;">freelance developer</span></strong>.</p>
+                    <p>On campus, I am busy organizing <strong><a href = "">WildHacks</a></strong>, Northwestern's annual collegiate hackathon, and tinkering with my own projects in <strong><a href = "">The Garage</a></strong>.</p>
+                    <p>This summer, I will be returning to <strong><span style = "color: #4285F4;">G</span><span style = "color: #DB4437;">o</span><span style = "color: #F4B400;">o</span><span style = "color: #4285F4;">g</span><span style = "color: #0F9D58;">l</span><span style = "color: #DB4437;">e</span></strong> as a Software Engineer, building out core Ads infrastructure on the Asset Library team.</p>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "experience" href = "#experience">
+        <div class = "main-container">
+            <h2>Experience</h2>
+            <div class = "experience-container">
+                <div class = "experience-nav">
+                    <ul class = "experience-nav-ul">
+                        <li class = "role-li display">Google</li>
+                        <li class = "role-li">Community Connections</li>
+                        <li class = "role-li">Pittsburgh Quantum Institute</li>
+                        <li class = "role-li">Medumo</li>
+                        <li class = "role-li">Jibo</li>
+                    </ul>
+                </div>
+                <div class = "experience-text">
+                    <h3>Software Engineer Intern <span class = "company">@ <a class = "underline" href = "https://google.com">Google</a></span></h3>
+                    <p class = "duration">June 2022 - September 2022</p>
+                    <ul class = "experience-text-ul">
+                        <li class = "description-li">Designed and developed a C++ Service API pipeline on the Google Formats Server that automatically creates image ad layouts by applying machine learning models on advertiser assets.</li>
+                        <li class = "description-li">Developed standalone C++ binaries using machine learning models to perform subject detection and extraction on images, natural background replacement, and intelligent image compositing.</li>
+                        <li class = "description-li">Researched, tested, and documented existing Google machine learning solutions in a comprehensive Exploration document for reference by future engineers.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "projects" href = "#projects">
+        <div class = "main-container">
+            <h2>Projects</h2>
+            <p class = "projects-intro">A curated collection of what I have built and what I am building. View my <strong><a class = "github-link" href = "https://github.com/thehugozhang">GitHub</a></strong> for more.</p>
+            <!-- <hr> -->
+            <div class = "project-container">
+                <img class = "project-image" alt = "Community Connections" src = "img/feature1.png" />
+                <div class = "project-description" style = "text-align: right;">
+                    <div class = "div-right">
+                        <p class = "featured">Featured Project</p>
+                        <h3>Community Connections</h3>
+                        <p class = "featured-description">Complete design overhaul of Community Connections website including composition, color, illustration, typography, and branding.</p>
+                        <ul>
+                            <li class = "li-right">Web Design</li>
+                            <li class = "li-right">Javascript</li>
+                            <li class = "li-right">Firebase</li>
+                        </ul>
+                        <button class = "project-button" type="button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "project-container">
+                <div class = "project-description" style = "text-align: left;">
+                    <div class = "div-left">
+                        <p class = "featured">Featured Project</p>
+                        <h3>TraceJS, SaaS Startup</h3>
+                        <p class = "featured-description">Built a server-less REST API that adds client-side debugging capabilities to any Javascript project and automatically reports deployment bugs to a centralized online dashboard. Deprecated as of December 2021.</p>
+                        <ul>
+                            <li class = "li-left">Node.js</li>
+                            <li class = "li-left">Express</li>
+                            <li class = "li-left">Javascript</li>
+                            <li class = "li-left">Firebase</li>
+                            <li class = "li-left">Web Design</li>
+                        </ul>
+                        <button class = "project-button" type="button">Learn more</button>
+                    </div>
+                </div>
+                <img class = "project-image" alt = "TraceJS User Dashboard" src = "img/feature2.png" />
+            </div>
+            <div class = "project-container">
+                <img class = "project-image" alt = "Community Connections" src = "img/feature1.png" />
+                <div class = "project-description" style = "text-align: right;">
+                    <div class = "div-right">
+                        <p class = "featured">Featured Project</p>
+                        <h3>Community Connections</h3>
+                        <p class = "featured-description">Complete design overhaul of Community Connections website including composition, color, illustration, typography, and branding.</p>
+                        <ul>
+                            <li class = "li-right">Web Design</li>
+                            <li class = "li-right">Javascript</li>
+                            <li class = "li-right">Firebase</li>
+                        </ul>
+                        <button class = "project-button" type="button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "contact" href = "#contact">
+        <div class = "main-container">
+            <h2>Contact</h2>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

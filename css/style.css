@@ -1,0 +1,468 @@
+html, body {
+    margin: 0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+/* Landing Page */
+
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
+}
+
+#landing div {
+    width: 80%;
+    max-width: 992px;
+}
+
+#landing h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(30, 61, 89);
+    margin: 0px;
+}
+
+#landing .intro {
+    font-family: 'Fira Code', monospace;
+    font-size: 17px;
+    margin: 0px 0px 1em;
+    color: #7F00FF;
+    line-height: 1.1;
+}
+
+#landing .intro-uni {
+    opacity: 0.7;
+    transition: ease-in-out 0.2s;
+    color: #4E2A84;
+    text-decoration: none;
+}
+
+#landing .intro-uni:hover {
+    opacity: 1;
+    color: #4E2A84;
+    cursor: pointer;
+}
+
+#landing .intro-uni a {
+    text-decoration: none;
+}
+
+#landing .intro-uni a:active {
+    color: #4E2A84;
+}
+
+#landing .description {
+    margin: 1.5em 0 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 540px;
+    opacity: 0.7;
+    color: rgb(30, 61, 89);
+    font-size: 17px;
+}
+
+#landing ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+}
+
+#landing li {
+    float: left;
+}
+
+#landing li a {
+    display: inline-block;
+    position: relative;
+    color: #7F00FF;
+    text-decoration: none;
+    margin-top: 2em;
+    margin-right: 3em;
+}
+
+#landing li a:hover {
+    cursor: pointer;
+}
+
+#landing li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #7F00FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#landing li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* About Page */
+
+#about {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    box-sizing:border-box;
+    margin-bottom: 10em;
+}
+
+#about div {
+    width: 80%;
+    max-width: 992px;
+}
+
+#about img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgb(2 12 27 / 60%) 0px 10px 30px -15px;
+}
+
+#about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(30, 61, 89);
+}
+
+#about .bio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about .bio-text {
+    font-family: sans-serif;
+    color: rgb(30, 61, 89);
+    margin: 0 0 0 4em;
+}
+
+#about .bio-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#about .bio-text p {
+    line-height: 1.5;
+    font-size: 17px;
+    opacity: 0.7;
+    text-align: justify;
+}
+
+#about .bio-text p a {
+    text-decoration: none;
+    color: #7F00FF;
+    transition: ease-in-out 0.2s;
+}
+
+#about .bio-text p a:hover {
+    color: #4E2A84;
+}
+
+/* Experience Page */
+
+#experience {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    box-sizing:border-box;
+    margin-bottom: 10em;
+}
+
+#experience div.main-container {
+    width: 80%;
+    max-width: 992px;
+}
+
+#experience h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(30, 61, 89);
+}
+
+#experience .experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#experience .experience-container ul.experience-nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+}
+
+#experience .experience-container li.role-li {
+    width: 250px;
+
+
+    border-left: 2px solid #C0C0C0;
+    opacity: 0.7;
+    
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    height: 55px;
+    padding: 0 2em;
+    font-size: 13px;
+
+    transition: 0.1s ease-in-out;
+}
+
+#experience .experience-container li.role-li:hover {
+    background:rgb(238, 238, 238);
+    border-left: 2px solid #7F00FF;
+    color: #7F00FF;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#experience .experience-container li.display {
+    border-left: 2px solid #7F00FF !important;
+    color: #7F00FF !important;
+    opacity: 1 !important;
+}
+
+#experience .experience-container div.experience-text {
+    margin: 0 0 0 2em;
+}
+
+#experience .experience-container .experience-text h3 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(30, 61, 89);
+}
+
+#experience .experience-container .experience-text span.company {
+    color: #7F00FF;
+}
+
+#experience .experience-container .experience-text a.underline {
+    display: inline-block;
+    position: relative;
+    color: #7F00FF;
+    text-decoration: none;
+}
+
+#experience .experience-container .experience-text a.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #7F00FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#experience .experience-container .experience-text a.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#experience .experience-container .experience-text .duration {
+    margin: 0.5em 0 1.5em 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    color: rgb(30, 61, 89);
+    opacity: 0.7;
+}
+
+#experience .experience-container ul.experience-text-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#experience .experience-container li.description-li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+
+    font-family: sans-serif;
+    color: rgb(30, 61, 89);
+    line-height: 1.5;
+    font-size: 17px;
+    opacity: 0.7;
+}
+
+#experience .experience-container li.description-li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #7F00FF;
+    font-size: 18px;
+}
+
+/* Projects Page */
+
+#projects {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    box-sizing:border-box;
+    margin-bottom: 10em;
+}
+
+#projects div.main-container {
+    width: 80%;
+    max-width: 992px;
+}
+
+#projects h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(30, 61, 89);
+}
+
+#projects hr {
+    max-width: 84px;
+    margin: 2em auto 4em 0;
+    color: #C0C0C0;
+    text-align: left;
+}
+
+#projects .projects-intro {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: rgb(30, 61, 89);
+    opacity: 0.7;
+    margin: 2em 0 4em 0;
+}
+
+#projects .projects-intro a.github-link {
+    display: inline-block;
+    position: relative;
+    color: #7F00FF;
+    text-decoration: none;
+}
+
+#projects .projects-intro a.github-link:hover {
+    cursor: pointer;
+}
+
+#projects .projects-intro a.github-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #7F00FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#projects .projects-intro a.github-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#projects .project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+#projects .project-container .project-image {
+    max-width: 520px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: rgb(2 12 27 / 60%) 0px 10px 30px -15px;
+}
+
+#projects .project-container .project-description {
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+}
+
+#projects .project-container .project-description p.featured {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #7F00FF;
+}
+
+#projects .project-container .project-description h3 {
+    margin: 0 0 1em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgb(30, 61, 89);
+}
+
+#projects .project-container .project-description p.featured-description {
+    font-family: sans-serif;
+    color: rgb(30, 61, 89);
+    line-height: 1.5;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+#projects .project-container .project-description ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    color: #7F00FF;
+}
+
+#projects .project-container .project-description .li-right {
+    float: right;
+    margin-left: 2em;
+}
+
+#projects .project-container .project-description .li-left {
+    float: left;
+    margin-right: 2em;
+}
+
+#projects .project-container .project-description .project-button {
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    color: #7F00FF;
+    padding: 12px 16px;
+    background: transparent;
+    border: 1px solid #7F00FF;
+    border-radius: 5px;
+    margin-top: 2em;
+}
