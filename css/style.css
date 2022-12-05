@@ -27,6 +27,7 @@ html, body {
     font-weight: 700;
     color: rgb(30, 61, 89);
     margin: 0px;
+    transition: ease-in-out 0.2s;
 }
 
 #landing .intro {
@@ -35,6 +36,7 @@ html, body {
     margin: 0px 0px 1em;
     color: #7F00FF;
     line-height: 1.1;
+    transition: ease-in-out 0.2s;
 }
 
 #landing .intro-uni {
@@ -87,6 +89,7 @@ html, body {
     text-decoration: none;
     margin-top: 2em;
     margin-right: 3em;
+    transition: ease-in-out 0.2s;
 }
 
 #landing li a:hover {
@@ -121,14 +124,15 @@ html, body {
     margin-bottom: 10em;
 }
 
-#about div {
+#about div.main-container {
     width: 80%;
     max-width: 992px;
 }
 
 #about img {
-    width: 30%;
-    height: auto;
+    object-fit: cover;
+    object-position: right center;
+    max-width: 30%;
     border-radius: 5px;
     box-shadow: rgb(2 12 27 / 60%) 0px 10px 30px -15px;
 }
@@ -138,17 +142,21 @@ html, body {
     font-size: 2em;
     font-weight: 700;
     color: rgb(30, 61, 89);
+    display: block;
 }
 
 #about .bio-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
     width: 100%;
 }
 
 #about .bio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: sans-serif;
     color: rgb(30, 61, 89);
     margin: 0 0 0 4em;
@@ -156,14 +164,13 @@ html, body {
 
 #about .bio-text h3 {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    margin-top: 0;
 }
 
 #about .bio-text p {
     line-height: 1.5;
     font-size: 17px;
     opacity: 0.7;
-    text-align: justify;
 }
 
 #about .bio-text p a {
@@ -216,20 +223,14 @@ html, body {
 
 #experience .experience-container li.role-li {
     width: 250px;
-
-
     border-left: 2px solid #C0C0C0;
     opacity: 0.7;
-    
-
     display: flex;
     justify-content: start;
     align-items: center;
-
     height: 55px;
     padding: 0 2em;
     font-size: 13px;
-
     transition: 0.1s ease-in-out;
 }
 
@@ -307,8 +308,6 @@ html, body {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
-    text-align: justify;
-
     font-family: sans-serif;
     color: rgb(30, 61, 89);
     line-height: 1.5;
@@ -396,6 +395,15 @@ html, body {
     object-fit: cover;
     border-radius: 5px;
     box-shadow: rgb(2 12 27 / 60%) 0px 10px 30px -15px;
+    transition: 0.2s ease-in-out;
+}
+
+#projects .project-container .img-right {
+    margin-left: 2em;
+}
+
+#projects .project-container .img-left {
+    margin-right: 2em;
 }
 
 #projects .project-container .project-description {
@@ -464,6 +472,15 @@ html, body {
 #projects .project-container .project-description .project-button:hover {
     cursor: pointer;
     background-color: rgba(127, 0, 255, 0.1);
+}
+
+#projects .project-container .project-description .project-button:disabled,
+#projects .project-container .project-description .project-button[disabled]{
+    cursor: auto;
+    border: 1px solid rgb(30, 61, 89);
+    background-color: transparent;
+    color: rgb(30, 61, 89);
+    opacity: 0.3;
 }
 
 /* Contact Page */
@@ -562,4 +579,138 @@ footer a svg {
 footer a svg:hover {
     color: #7F00FF;
     transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+/* Less than or equal to 1024px */
+@media only screen and (max-width: 1024px) {
+    #landing h1 {
+        font-size: 48px;
+    }
+}
+
+/* Less than or equal to 768px */
+@media only screen and (max-width: 600px) {
+    #landing h1 {
+        font-size: 48px;
+    }
+
+    #landing li a {
+        font-size: 13px;
+    }
+
+    #landing .intro {
+        font-size: 13px;
+    }
+}
+
+
+/* Less than or equal to 896px */
+@media only screen and (max-width: 896px) {
+    #about .bio-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #about img {
+        object-fit: cover;
+        object-position: right top;
+        width: 100%;
+        height: auto;
+        max-height: 717px;
+        max-width: 100%;
+    }
+
+    #about .bio-text {
+        margin: 4em 0 0 0;
+    }
+}
+
+/* Less than or equal to 992px */
+@media only screen and (max-width: 992px) {
+    #experience .experience-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #experience .experience-container .experience-nav {
+        width: 100%;
+    }
+
+    #experience .experience-container ul.experience-nav-ul {
+        display:table;
+        width:100%;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    }
+
+    #experience .experience-container li.role-li {
+        display:table-cell;
+        float: none;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0 1em;
+        border-bottom: 2px solid #C0C0C0;
+        border-left: none;
+        height: 55px;
+        font-size: 13px;
+    }
+
+    #experience .experience-container li.role-li:hover {
+        border-left: none;
+        border-bottom: 2px solid #7F00FF;
+    }
+    
+    #experience .experience-container li.display {
+        border-left: none !important;
+        border-bottom: 2px solid #7F00FF !important;
+    }
+
+    #experience .experience-container div.experience-text {
+        margin: 2em 0 0 0;
+    }
+}
+
+/* No less than 768px, no greater than 992 */
+@media (min-width: 768px) and (max-width: 992px) {
+    #projects .project-container .project-image {
+        max-width: 360px;
+    }
+}
+
+/* Less than or equal to 768 */
+@media only screen and (max-width: 768px) {
+    #projects .project-container {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between;
+    }
+
+    #projects .project-container .img-left {
+        max-width: 100%;
+        margin: 0 auto 2em 0;
+    }
+
+    #projects .project-container .img-right {
+        max-width: 100%;
+        margin: 0 auto 2em 0;
+    }
+
+    #projects .project-container .show-project {
+        display: block !important;
+    }
+
+    #projects .project-container .hide-project {
+        display: none !important;
+    }
+
+    #projects .project-container .project-description {
+        max-width: 100%;
+        text-align: center;
+    }
 }

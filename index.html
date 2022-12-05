@@ -28,7 +28,7 @@
         </div>
     </section>
     <section id = "about" href = "#about">
-        <div>
+        <div class = "main-container">
             <h2>About</h2>
             <div class = "bio-container">
                 <img alt = "LinkedIn Profile Photo" src = "img/me.png" />
@@ -37,7 +37,7 @@
                     <p>I'm Hugo, a senior at Northwestern University studying Computer Science and Entrepreneurship. I mostly focus on <strong><span style = "color: #7F00FF;">full-stack development</span></strong>, but have recently been exploring creative applications for <strong><span style = "color: #7F00FF;">artificial intelligence</span></strong>.</p>
                     <p>I've had the opportunity to work in <strong><span style = "color: #7F00FF;">startups</span></strong>, contract for <strong><span style = "color: #7F00FF;">non-profits</span></strong>, engineer public-facing APIs at a <strong><span style = "color: #7F00FF;">huge corporation</span></strong>, and create numerous full-stack applications as a <strong><span style = "color: #7F00FF;">freelance developer</span></strong>.</p>
                     <p>On campus, I am busy organizing <strong><span style = "color: #7F00FF;">WildHacks</span></strong>, Northwestern's annual collegiate hackathon, and tinkering with my own projects in <strong><span style = "color: #7F00FF;">The Garage</strong>.</p>
-                    <p>This August, I will be returning to <strong><span style = "color: #4285F4;">G</span><span style = "color: #DB4437;">o</span><span style = "color: #F4B400;">o</span><span style = "color: #4285F4;">g</span><span style = "color: #0F9D58;">l</span><span style = "color: #DB4437;">e</span></strong> full-time as a Software Engineer, building out core Ads infrastructure on the Asset Library team.</p>                    
+                    <p style = "margin-bottom: 0;">This August, I will be returning to <strong><span style = "color: #4285F4;">G</span><span style = "color: #DB4437;">o</span><span style = "color: #F4B400;">o</span><span style = "color: #4285F4;">g</span><span style = "color: #0F9D58;">l</span><span style = "color: #DB4437;">e</span></strong> full-time as a Software Engineer, building out core Ads infrastructure on the Asset Library team.</p>                    
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <h2>Projects</h2>
             <p class = "projects-intro">A curated collection of what I have built and what I am building. View my <strong><a class = "github-link" href = "https://github.com/thehugozhang">GitHub</a></strong> for more.</p>
             <div class = "project-container">
-                <img class = "project-image" alt = "Community Connections" src = "img/feature1.png" />
+                <img class = "project-image img-left" alt = "Community Connections" src = "img/feature1.png" />
                 <div class = "project-description" style = "text-align: right;">
                     <div class = "div-right">
                         <p class = "featured">Featured Project</p>
@@ -89,6 +89,7 @@
                 </div>
             </div>
             <div class = "project-container">
+                <img class = "project-image img-right show-project" style = "display: none;" alt = "TraceJS User Dashboard" src = "img/feature2.png" />
                 <div class = "project-description" style = "text-align: left;">
                     <div class = "div-left">
                         <p class = "featured">Featured Project</p>
@@ -104,10 +105,10 @@
                         <button id = "button-2" class = "project-button" type="button">Learn more</button>
                     </div>
                 </div>
-                <img class = "project-image" alt = "TraceJS User Dashboard" src = "img/feature2.png" />
+                <img class = "project-image img-right hide-project" alt = "TraceJS User Dashboard" src = "img/feature2.png" />
             </div>
             <div class = "project-container">
-                <img class = "project-image" alt = "Community Connections" src = "img/feature3.png" />
+                <img class = "project-image img-left" alt = "Community Connections" src = "img/feature3.png" />
                 <div class = "project-description" style = "text-align: right;">
                     <div class = "div-right">
                         <p class = "featured">Featured Project</p>
@@ -119,7 +120,7 @@
                             <li class = "li-right">Node.js</li>
                             <li class = "li-right">Google Cloud</li>
                         </ul>
-                        <button id = "button-3" class = "project-button" type="button">Learn more</button>
+                        <button id = "button-3" class = "project-button" type="button" disabled>Learn more</button>
                     </div>
                 </div>
             </div>
